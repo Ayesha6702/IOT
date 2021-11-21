@@ -1,0 +1,248 @@
+body {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  background-color: rgba(212, 238, 255, 0.4);
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  margin: 20px;
+  align-items: center;
+}
+header img {
+  width: 100px;
+  height: 50px;
+}
+#links {
+  display: flex;
+  justify-content: space-around;
+  width: 600px;
+}
+#links a,
+aside a {
+  text-decoration: none;
+  color: black;
+}
+aside {
+  display: none;
+}
+main {
+  margin: 0 50px;
+}
+section {
+  margin-top: 100px;
+}
+#menu {
+  display: none;
+}
+#hd1 {
+  width: 100%;
+  height: 500px;
+  background-image: url(bg1.jpg);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+}
+#hd11 {
+  width: 600px;
+  height: 400px;
+  position: absolute;
+  margin: 80px 0;
+}
+h1 {
+  font-size: 45px;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 2px;
+  word-spacing: 5px;
+}
+#hd11 p {
+  font-size: 20px;
+  line-height: 30px;
+  word-spacing: 10px;
+  letter-spacing: 1px;
+  font-family: "Barlow Condensed", sans-serif;
+}
+#hd12 {
+  height: 500px;
+}
+#uldiv {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
+}
+#uldiv li {
+  margin: 20px;
+  word-spacing: 10px;
+  letter-spacing: 0.8px;
+  line-height: 20px;
+  max-width: 800px;
+}
+#uldiv img {
+  height: 450px;
+}
+#Ad1 {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+#Ad1 div {
+  width: 550px;
+  height: 250px;
+  display: flex;
+  margin: 30px 15px;
+  justify-content: space-between;
+  background-color: rgb(230, 227, 223);
+  border-radius: 10px;
+}
+#Ad1 div img {
+  width: 250px;
+}
+#Ad1 div p {
+  width: 100%;
+  text-align: center;
+  margin: auto 0;
+  padding: 0 10px 0 15px;
+  line-height: 20px;
+  word-spacing: 3px;
+}
+#APPLICATIONS div {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+#APPLICATIONS div img {
+  width: 50%;
+  height: 400px;
+}
+#APPLICATIONS div div {
+  display: block;
+  word-spacing: 3px;
+  margin: auto 30px;
+  width: 600px;
+}
+.mobile {
+  display: none;
+}
+#CAREER div {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+#CAREER div img {
+  margin: 10px auto;
+}
+@media (max-width: 1300px) {
+  #hd1 {
+    background-image: url(bg2.jpg);
+    color: white;
+    font-weight: 500;
+    background-size: cover;
+  }
+  #hd11 {
+    margin: 200px 20px;
+  }
+  #Ad1 div {
+    flex-wrap: wrap;
+    height: 400px;
+    width: 400px;
+    justify-content: center;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+}
+@media (max-width: 1000px) {
+  main {
+    margin: 0 10px;
+  }
+  h1 {
+    font-size: 20px;
+  }
+  #hd12 {
+    height: fit-content;
+  }
+  #uldiv li {
+    margin: 10px 0;
+  }
+  #uldiv {
+    margin: 0px;
+  }
+  #uldiv img {
+    display: none;
+  }
+  #Ad1 div {
+    width: 300px;
+    margin: 20px 5px;
+  }
+
+  #APPLICATIONS div img {
+    width: 500px;
+    height: 300px;
+    margin: auto 0;
+  }
+  #APPLICATIONS div {
+    flex-wrap: wrap;
+  }
+  #APPLICATIONS div div {
+    width: 95%;
+  }
+  .mobile {
+    display: block;
+  }
+  .desk {
+    display: none;
+  }
+}
+@media (max-width: 750px) {
+  #hd11 {
+    width: 80%;
+  }
+  #CAREER div img {
+    width: 80%;
+    height: 80%;
+  }
+
+  #Ad1 div {
+    width: 250px;
+  }
+  #links {
+    display: none;
+  }
+  #menu {
+    display: block;
+    width: 25px;
+    height: 25px;
+  }
+  aside {
+    position: absolute;
+    background: white;
+    width: 250px;
+    height: 100vh;
+    flex-direction: column;
+    padding: 50px 20px;
+    box-sizing: border-box;
+    margin-top: -70px;
+    transition: 1s;
+    display: none;
+  }
+  #close {
+    width: 20px;
+    height: 20px;
+    margin-left: auto;
+  }
+  aside a {
+    margin: 20px;
+  }
+}
+@media (max-width: 500px) {
+  #APPLICATIONS div div {
+    min-width: 100%;
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+  #APPLICATIONS div img {
+    width: 90%;
+  }
+}
